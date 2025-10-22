@@ -6,7 +6,7 @@ import Navbar from '../Components/Navbar';
 const MainLayout = () => {
     return (
         <div>
-            <div className='bg-gradient-to-tl from-green-800 to-green-600 px-15'>
+            <div className='bg-gradient-to-tl from-green-800 to-green-600 md:px-15'>
                 <Navbar></Navbar>
             </div>
             <Outlet></Outlet>

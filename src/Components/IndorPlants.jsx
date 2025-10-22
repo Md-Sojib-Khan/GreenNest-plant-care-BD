@@ -10,7 +10,7 @@ const IndorPlants = ({ data }) => {
                 Discover our most loved plants by gardening enthusiasts. These top-rated varieties
                 have earned their spot for their beauty, resilience, and air-purifying qualities.
             </p>
-            <div className='grid md:grid-cols-3 gap-5'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
                 {
                     sliceData.map(PlantData => <PlantCard PlantData={PlantData} key={PlantData.plantId}></PlantCard>)
                 }

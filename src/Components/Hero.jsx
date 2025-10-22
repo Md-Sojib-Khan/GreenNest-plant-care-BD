@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <div className="relative w-full h-screen overflow-hidden">
       {/* Navbar fixed top */}
-      <div className="absolute top-10 left-15 w-11/12 z-50">
+      <div className="absolute md:top-10 md:left-15 w-11/12 z-50">
         <Navbar />
       </div>
 

@@ -3,6 +3,7 @@ import RootLayout from "../Layouts/RootLayout";
 import HomePage from "../Pages/HomePage";
 import MainLayout from "../Layouts/MainLayout";
 import PlantsPage from "../Pages/PlantsPage";
+import PlantDetails from "../Pages/PlantDetails";
 
 const router = createBrowserRouter([
     {
@@ -22,7 +23,13 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                Component:PlantsPage
+                Component:PlantsPage,
+                loader: ()=>fetch('/plants.json')
+            },
+            {
+                path: '/plants/:id',
+                element: <PlantDetails></PlantDetails>,
+                loader: ()=>fetch('/plants.json')
             }
         ]
     }
