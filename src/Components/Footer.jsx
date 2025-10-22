@@ -3,18 +3,14 @@ import { FaGithub, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <div className='bg-[#001931] text-white'>
+        <div className=' bg-gradient-to-tl from-green-900 to-green-700 text-white'>
             <footer className=" py-10 w-11/12 mx-auto md:flex justify-between">
                 <aside className='md:w-1/3 mb-5'>
                     <div className='flex items-center gap-1'>
-                        <h1 className='font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent'>GreenNest</h1>
+                        <h1 className='font-bold text-2xl text-white'>GreenNest</h1>
                     </div>
                     <p>
-                        Explore a universe of applications for your device. Find tools for productivity, creativity, entertainment, and more, all carefully curated for quality and security.
-
-                        Your official destination for apps and games. We connect developers and users in a safe, trusted, and vibrant ecosystem.
-
-                        The ultimate platform to find the perfect apps to power your passions and simplify your life. Download with confidence.
+                        GreenNest brings nature's serenity into your living space. We're passionate about helping you create greener, healthier homes through our carefully curated collection of indoor plants. From air-purifying varieties to low-maintenance succulents, we provide everything you need to transform your space into a natural oasis.
                     </p>
                 </aside>
                 <div className='flex justify-around mb-5 lg:space-x-28 md:space-x-14'>
