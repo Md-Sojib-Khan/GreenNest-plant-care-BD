@@ -4,16 +4,20 @@ import HomePage from "../Pages/HomePage";
 import MainLayout from "../Layouts/MainLayout";
 import PlantsPage from "../Pages/PlantsPage";
 import PlantDetails from "../Pages/PlantDetails";
+import LoginPage from "../Pages/LoginPage";
+import Register from "../Pages/Register";
+import PrivateRoute from "./PrivateRoute";
+import ProfilePage from "../Pages/ProfilePage";
 
 const router = createBrowserRouter([
     {
-        path:'/',
+        path: '/',
         Component: RootLayout,
-        children:[
+        children: [
             {
                 index: true,
                 Component: HomePage,
-                loader: ()=>fetch('/plants.json')
+                loader: () => fetch('/plants.json')
             }
         ]
     },
@@ -23,13 +27,29 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                Component:PlantsPage,
-                loader: ()=>fetch('/plants.json')
+                Component: PlantsPage,
+                loader: () => fetch('/plants.json')
             },
             {
                 path: '/plants/:id',
-                element: <PlantDetails></PlantDetails>,
-                loader: ()=>fetch('/plants.json')
+                element: <PrivateRoute>
+                    <PlantDetails></PlantDetails>
+                </PrivateRoute>,
+                loader: () => fetch('/plants.json')
+            },
+            {
+                path: '/plants/login',
+                element: <LoginPage></LoginPage>
+            },
+            {
+                path: '/plants/signup',
+                element: <Register></Register>
+            },
+            {
+                path: '/plants/profile',
+                element: <PrivateRoute>
+                    <ProfilePage></ProfilePage>
+                </PrivateRoute>
             }
         ]
     }

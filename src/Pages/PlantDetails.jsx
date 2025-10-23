@@ -33,7 +33,7 @@ const PlantDetails = () => {
                     </div>
                     <div className='flex items-center gap-1 font-semibold '>
                         <h3>Rating:</h3>
-                        <h3>${plantData.rating}</h3>
+                        <h3>{plantData.rating}</h3>
                     </div>
                     <div className='flex items-center gap-1 font-semibold'>
                         <h3>CareLevel:</h3>

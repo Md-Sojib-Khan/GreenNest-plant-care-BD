@@ -1,12 +1,23 @@
-import React from 'react';
-import { NavLink } from 'react-router';
+import React, { use } from 'react';
+import { Link, NavLink } from 'react-router';
+import { AuthContext } from '../Context/AuthContext';
+import userImg from '../assets/user.png'
+import { toast } from 'react-toastify';
 
 const Navbar = () => {
+    const { user, logOutUser} = use(AuthContext);
     const links = <>
-    <li><NavLink to={'/'}>Home</NavLink></li>
-    <li><NavLink to={'/plants'}>Plants</NavLink></li>
-    <li><NavLink>My Profile</NavLink></li>
+        <li><NavLink to={'/'}>Home</NavLink></li>
+        <li><NavLink to={'/plants'}>Plants</NavLink></li>
+        <li><NavLink to={'/plants/profile'}>My Profile</NavLink></li>
     </>
+
+    const handleSignOut = () => {
+        logOutUser()
+        .then(()=> toast.success('Sign-out successful'))
+        .catch(e=> toast(e.code))
+    }
+
     return (
         <div className="navbar bg-transparent">
             <div className="navbar-start">
@@ -28,7 +39,21 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn border-0 text-white font-semibold md:px-5 py-2 rounded-full bg-gradient-to-r from-green-400 via-emerald-500 to-green-700 hover:from-emerald-600 hover:to-green-500 shadow-md hover:shadow-lg transition-all duration-300btn border-0 text-white font-semibold px-6 py-2 rounded-full bg-gradient-to-br from-emerald-400 to-green-800 hover:brightness-110 hover:shadow-lg transition-all duration-300">Login</a>
+                {
+                    user
+                        ? <div className="dropdown dropdown-end dropdown-hover">
+                            <div tabIndex={0} role="button" >
+                                <img className='w-10 h-10 object-cover rounded-full border-2 border-white' src={user.photoURL ? user.photoURL : userImg} alt="" />
+                            </div>
+                            <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm space-y-2">
+                                <li><a className='font-medium'>{user.displayName}</a></li>
+                                <li><button onClick={handleSignOut} className="btn border-0 text-white font-semibold md:px-5 py-2 rounded-full bg-gradient-to-r from-green-400 via-emerald-500 to-green-700 hover:from-emerald-600 hover:to-green-500 shadow-md hover:shadow-lg transition-all duration-300btn border-0 text-white font-semibold px-6 py-2 rounded-full bg-gradient-to-br from-emerald-400 to-green-800 hover:brightness-110 hover:shadow-lg transition-all duration-300">LogOut</button></li>
+                            </ul>
+                         </div>
+
+                        : <Link to={'/plants/login'} className="btn border-0 text-white font-semibold md:px-5 py-2 rounded-full bg-gradient-to-r from-green-400 via-emerald-500 to-green-700 hover:from-emerald-600 hover:to-green-500 shadow-md hover:shadow-lg transition-all duration-300btn border-0 text-white font-semibold px-6 py-2 rounded-full bg-gradient-to-br from-emerald-400 to-green-800 hover:brightness-110 hover:shadow-lg transition-all duration-300">Login</Link>
+                }
+
             </div>
         </div>
     );
