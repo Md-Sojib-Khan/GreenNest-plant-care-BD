@@ -12,10 +12,10 @@ const PlantDetails = () => {
             plant.plantId === id ||
             plant.plantId.toString() === id;
     });
-    console.log(plantData)
+
     return (
         <div>
-            <div className="card lg:card-side bg-base-100 shadow-sm grid grid-cols-2 py-10 px-15 bg-gradient-to-br from-green-50 to-emerald-100">
+            <div className="card lg:card-side bg-base-100 shadow-sm grid grid-cols-1 md:grid-cols-2 py-10 md:px-15 px-2 bg-gradient-to-br from-green-50 to-emerald-100">
                 <figure>
                     <img
                         src={plantData.image}

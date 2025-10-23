@@ -15,38 +15,41 @@ const router = createBrowserRouter([
         Component: RootLayout,
         children: [
             {
-                index: true,
+                path:'/',
                 Component: HomePage,
-                loader: () => fetch('/plants.json')
+                loader: () => fetch('/plants.json'),
+                hydrateFallbackElement: <p className='min-h-screen flex justify-center items-center'><span className="loading loading-spinner loading-xl"></span></p>
             }
         ]
     },
     {
-        path: '/plants',
+        path: '/',
         Component: MainLayout,
         children: [
             {
-                index: true,
+                path: '/plants',
                 Component: PlantsPage,
-                loader: () => fetch('/plants.json')
+                loader: () => fetch('/plants.json'),
+                hydrateFallbackElement: <p className='min-h-screen flex justify-center items-center'><span className="loading loading-spinner loading-xl"></span></p>
             },
             {
                 path: '/plants/:id',
                 element: <PrivateRoute>
                     <PlantDetails></PlantDetails>
                 </PrivateRoute>,
-                loader: () => fetch('/plants.json')
+                loader: () => fetch('/plants.json'),
+                hydrateFallbackElement: <p className='min-h-screen flex justify-center items-center'><span className="loading loading-spinner loading-xl"></span></p>
             },
             {
-                path: '/plants/login',
+                path: '/login',
                 element: <LoginPage></LoginPage>
             },
             {
-                path: '/plants/signup',
+                path: '/signup',
                 element: <Register></Register>
             },
             {
-                path: '/plants/profile',
+                path: '/profile',
                 element: <PrivateRoute>
                     <ProfilePage></ProfilePage>
                 </PrivateRoute>

@@ -20,7 +20,7 @@ const Register = () => {
         const password = from.password.value;
 
         const regex = /^(?=.*[A-Z])(?=.*[a-z]).{6,}$/;
-        if(!regex.test(password)){
+        if (!regex.test(password)) {
             setError("Password must have at least one uppercase, one lowercase letter, and be at least 6 characters long.");
             return;
         }
@@ -61,20 +61,20 @@ const Register = () => {
     }
 
     return (
-        <div className="hero bg-base-200 min-h-screen">
+        <div className="hero bg-base-200 md:min-h-screen my-3">
             <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                 <h1 className="text-4xl font-bold text-center">SignUp now!</h1>
                 <div className="card-body">
                     <form onSubmit={handleSubmit} className="fieldset">
                         <label className="label">Name</label>
-                        <input type="text" name='name' className="input" placeholder="Name" />
+                        <input type="text" name='name' className="input" placeholder="Name" required />
                         <label className="label">PhotoURL</label>
                         <input type="text" name='photoURL' className="input" placeholder="PhotoURL" />
                         <label className="label">Email</label>
-                        <input type="email" name='email' className="input" placeholder="Email" />
+                        <input type="email" name='email' className="input" placeholder="Email" required/>
                         <label className="label">Password</label>
                         <div className='relative'>
-                            <input type={showPassword ? "text" : "password"} name='password' className="input" placeholder="Password" />
+                            <input type={showPassword ? "text" : "password"} name='password' className="input" placeholder="Password" required />
                             <button onClick={handleShowPassword} type='button' className='cursor-pointer absolute top-3.5 right-8 z-10'>{showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}</button>
                         </div>
                         <p className='text-xs text-red-500'>{error}</p>

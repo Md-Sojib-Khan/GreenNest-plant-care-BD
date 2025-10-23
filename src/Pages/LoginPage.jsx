@@ -56,7 +56,7 @@ const LoginPage = () => {
     }
 
     return (
-        <div className="hero bg-base-200 min-h-screen">
+        <div className="hero bg-base-200 md:min-h-screen my-3">
             <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                 <h1 className="text-4xl font-bold text-center">Login now!</h1>
                 <div className="card-body">
@@ -70,7 +70,7 @@ const LoginPage = () => {
                         </div>
                         <div><a onClick={handleForgotPass} className="link link-hover">Forgot password?</a></div>
                         <button className="btn btn-neutral mt-4 hover:bg-white hover:text-black border-black">Login</button>
-                        <div className='mt-3'><div className="font-medium">Dont't Have An Account ? <Link to={'/plants/signup'} className='link link-hover text-red-500'>Register</Link></div></div>
+                        <div className='mt-3'><div className="font-medium">Dont't Have An Account ? <Link to={'/signup'} className='link link-hover text-red-500'>Register</Link></div></div>
                     </form>
                     <div className="divider">OR</div>
                     <button onClick={handleGoogleSignIn} className="btn bg-white text-black border-[#e5e5e5] hover:bg-black hover:text-white">

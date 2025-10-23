@@ -9,7 +9,7 @@ const Navbar = () => {
     const links = <>
         <li><NavLink to={'/'}>Home</NavLink></li>
         <li><NavLink to={'/plants'}>Plants</NavLink></li>
-        <li><NavLink to={'/plants/profile'}>My Profile</NavLink></li>
+        <li><NavLink to={'/profile'}>My Profile</NavLink></li>
     </>
 
     const handleSignOut = () => {
@@ -31,7 +31,7 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl text-white hover:text-black">GreenNest</a>
+                <Link to={'/'} className="btn btn-ghost text-xl text-white hover:text-black">GreenNest</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 text-white font-bold">
@@ -51,7 +51,7 @@ const Navbar = () => {
                             </ul>
                          </div>
 
-                        : <Link to={'/plants/login'} className="btn border-0 text-white font-semibold md:px-5 py-2 rounded-full bg-gradient-to-r from-green-400 via-emerald-500 to-green-700 hover:from-emerald-600 hover:to-green-500 shadow-md hover:shadow-lg transition-all duration-300btn border-0 text-white font-semibold px-6 py-2 rounded-full bg-gradient-to-br from-emerald-400 to-green-800 hover:brightness-110 hover:shadow-lg transition-all duration-300">Login</Link>
+                        : <Link to={'/login'} className="btn border-0 text-white font-semibold md:px-5 py-2 rounded-full bg-gradient-to-r from-green-400 via-emerald-500 to-green-700 hover:from-emerald-600 hover:to-green-500 shadow-md hover:shadow-lg transition-all duration-300btn border-0 text-white font-semibold px-6 py-2 rounded-full bg-gradient-to-br from-emerald-400 to-green-800 hover:brightness-110 hover:shadow-lg transition-all duration-300">Login</Link>
                 }
 
             </div>

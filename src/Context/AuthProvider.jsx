@@ -39,7 +39,6 @@ const AuthProvider = ({ children }) => {
         const unsabscribe = onAuthStateChanged(auth, (currentUser) => {
             setUser(currentUser)
             setLoading(false)
-            console.log(currentUser)
         });
         return () => { unsabscribe() }
     }, [])

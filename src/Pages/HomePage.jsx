@@ -4,6 +4,7 @@ import { useLoaderData } from 'react-router';
 import IndorPlants from '../Components/IndorPlants';
 import PlantCare from '../Components/PlantCare';
 import PlantExperts from '../Components/PlantExperts';
+import PlantOfTheWeek from '../Components/PlantOfTheWeek';
 
 const HomePage = () => {
     const data = useLoaderData();
@@ -13,6 +14,7 @@ const HomePage = () => {
             <IndorPlants data={data}></IndorPlants>
             <PlantCare></PlantCare>
             <PlantExperts></PlantExperts>
+            <PlantOfTheWeek data={data}></PlantOfTheWeek>
         </div>
     );
 };
