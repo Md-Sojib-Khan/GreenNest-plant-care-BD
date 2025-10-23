@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { AuthContext } from './AuthContext';
 import { app } from '../Firebase/firebase.config';
-import { getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
+import { getAuth, GoogleAuthProvider, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { createUserWithEmailAndPassword } from 'firebase/auth/cordova';
 
 const auth = getAuth(app);
@@ -31,6 +31,10 @@ const AuthProvider = ({ children }) => {
         return signOut(auth)
     }
 
+    const forgotPassUser = (email) => {
+        return sendPasswordResetEmail(auth, email)
+    }
+
     useEffect(() => {
         const unsabscribe = onAuthStateChanged(auth, (currentUser) => {
             setUser(currentUser)
@@ -48,8 +52,9 @@ const AuthProvider = ({ children }) => {
         createUser,
         logInUser,
         googleSignInUser,
-        logOutUser,
+        forgotPassUser,
         updateUser,
+        logOutUser,
     }
     return <AuthContext value={authInfo}>
         {children}

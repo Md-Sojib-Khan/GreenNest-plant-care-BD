@@ -1,14 +1,15 @@
-import React, { use, useState } from 'react';
+import React, { use, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../Context/AuthContext';
 import { toast } from 'react-toastify';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 const LoginPage = () => {
-    const { logInUser, googleSignInUser } = use(AuthContext);
+    const { logInUser, googleSignInUser, forgotPassUser} = use(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
     const [showPassword, setShowPassword] = useState(false);
+    const emailRef = useRef();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -44,6 +45,16 @@ const LoginPage = () => {
         setShowPassword(!showPassword)
     }
 
+    const handleForgotPass = () => {
+        const email = emailRef.current.value;
+        forgotPassUser(email)
+        .then(()=>{
+            toast.success('Passwod Reset Successfull Please Check Email');
+            window.location.href= "https://mail.google.com";
+        })
+        .catch(e =>{toast(e.code)})
+    }
+
     return (
         <div className="hero bg-base-200 min-h-screen">
             <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -51,13 +62,13 @@ const LoginPage = () => {
                 <div className="card-body">
                     <form onSubmit={handleSubmit} className="fieldset">
                         <label className="label">Email</label>
-                        <input type="email" name='email' className="input" placeholder="Email" />
+                        <input type="email" ref={emailRef} name='email' className="input" placeholder="Email" />
                         <label className="label">Password</label>
                         <div className='relative'>
                             <input type={showPassword ? 'text' : "password"} name='password' className="input" placeholder="Password" />
                             <button onClick={handleShowPassword} type='button' className='cursor-pointer absolute right-6 top-3.5 z-10'>{showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}</button>
                         </div>
-                        <div><a className="link link-hover">Forgot password?</a></div>
+                        <div><a onClick={handleForgotPass} className="link link-hover">Forgot password?</a></div>
                         <button className="btn btn-neutral mt-4 hover:bg-white hover:text-black border-black">Login</button>
                         <div className='mt-3'><div className="font-medium">Dont't Have An Account ? <Link to={'/plants/signup'} className='link link-hover text-red-500'>Register</Link></div></div>
                     </form>

@@ -7,7 +7,8 @@ import { FaEye, FaEyeSlash } from 'react-icons/fa';
 const Register = () => {
     const { createUser, setUser, updateUser, googleSignInUser } = use(AuthContext);
     const navigate = useNavigate();
-    const [showPassword, setShowPassword] = useState(false)
+    const [showPassword, setShowPassword] = useState(false);
+    const [error, setError] = useState('')
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -17,6 +18,13 @@ const Register = () => {
         const photoURL = from.photoURL.value;
         const email = from.email.value;
         const password = from.password.value;
+
+        const regex = /^(?=.*[A-Z])(?=.*[a-z]).{6,}$/;
+        if(!regex.test(password)){
+            setError("Password must have at least one uppercase, one lowercase letter, and be at least 6 characters long.");
+            return;
+        }
+
         createUser(email, password)
             .then(result => {
                 const userData = result.user;
@@ -69,6 +77,7 @@ const Register = () => {
                             <input type={showPassword ? "text" : "password"} name='password' className="input" placeholder="Password" />
                             <button onClick={handleShowPassword} type='button' className='cursor-pointer absolute top-3.5 right-8 z-10'>{showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}</button>
                         </div>
+                        <p className='text-xs text-red-500'>{error}</p>
                         <button className="btn btn-neutral mt-4 hover:bg-white hover:text-black border-black">SignUp</button>
                         <div className='mt-3'><div className="font-medium">Already Have An Account ? <Link to={'/plants/login'} className='link link-hover text-red-500'>SignIn</Link></div></div>
                     </form>
