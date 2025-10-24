@@ -14,7 +14,7 @@ import Navbar from './Navbar';
 
 const Hero = () => {
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full overflow-hidden">
       {/* Navbar fixed top */}
       <div className="absolute md:top-10 md:left-15 w-11/12 z-50">
         <Navbar />
@@ -37,11 +37,11 @@ const Hero = () => {
         navigation={true}
         loop={true}
         autoplay={{ delay: 3000 }}
-        className="h-screen z-30" 
+        className="z-30" 
       >
         {[hero7, hero5, hero, hero4].map((img, index) => (
           <SwiperSlide key={index}>
-            <div className="relative w-full h-screen">
+            <div className="relative w-full h-[60vh] md:h-[80vh] lg:h-screen">
               <img
                 className="w-full h-full object-cover"
                 src={img}

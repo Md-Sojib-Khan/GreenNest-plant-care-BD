@@ -14,7 +14,7 @@ const PlantsPage = () => {
                     From air-purifying greens to vibrant succulents, find the perfect plant that matches your lifestyle. Let nature grow closer to you — one leaf at a time.
                 </p>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-5 w-11/12 mx-auto'>
+            <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 w-11/12 mx-auto'>
                 {
                     data.map(PlantData => <PlantCard PlantData={PlantData} key={PlantData.plantId}></PlantCard>)
                 }
