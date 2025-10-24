@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 
 const PlantCard = ({ PlantData }) => {
     return (
-        <div>
+        <div  data-aos="slide-up">
             <div className="card bg-base-100 shadow-sm p-3 hover:scale-103 transition ease-in-out">
                 <figure>
                     <img

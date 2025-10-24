@@ -51,7 +51,7 @@ const PlantExperts = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div data-aos="slide-up" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {experts.map((expert) => (
                         <div 
                             key={expert.id}
