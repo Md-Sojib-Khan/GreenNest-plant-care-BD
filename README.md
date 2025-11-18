@@ -1,16 +1,95 @@
-# React + Vite
+🌱 GreenNest – Plant Care BD
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive plant shop web application designed to provide users with a clean UI, smooth navigation, and essential plant care tools.
 
-Currently, two official plugins are available:
+🖼️ Project Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+নিচে Screenshot যোগ করুন
 
-## React Compiler
+![GreenNest Screenshot](./screenshot.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+📗 Overview
 
-## Expanding the ESLint configuration
+GreenNest is a user-friendly plant care website where users can explore plants, view plant details, manage cart/wishlist, and learn about plant care.
+The website is fully responsive, visually aesthetic, and designed using modern technologies.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🚀 Main Technologies Used
+
+React.js
+
+React Router DOM
+
+Tailwind CSS
+
+DaisyUI
+
+Firebase Authentication
+
+Node.js (Backend)
+
+Express.js
+
+MongoDB Database
+
+⭐ Core Features
+
+🌿 Modern & responsive UI
+
+🛒 Add to cart / wishlist system
+
+🔍 View plant details
+
+🔐 User authentication (Login/Register)
+
+📦 CRUD operations (Add, Update, Delete plants)
+
+🔄 Real-time data update from database
+
+📱 Full mobile, tablet & desktop responsive design
+
+🔥 Firebase secure auth system
+
+🔧 Express & MongoDB powered backend API
+
+📦 Dependencies Used
+Frontend
+react
+react-router-dom
+firebase
+axios
+react-icons
+react-toastify
+tailwindcss
+daisyui
+
+Backend
+express
+cors
+mongodb
+dotenv
+
+🛠️ How to Run This Project Locally
+1️⃣ Clone the repository
+git clone https://github.com/Md-Sojib-Khan/GreenNest-plant-care-BD.git
+
+2️⃣ Install frontend dependencies
+cd GreenNest-plant-care-BD
+npm install
+
+3️⃣ Start the frontend
+npm run dev
+
+🖥️ Backend Setup (If included)
+Install backend dependencies
+cd server
+npm install
+
+Create .env file
+DB_USER=yourUser
+DB_PASS=yourPassword
+JWT_SECRET=anySecret
+
+Run backend
+node index.js
+
+🌐 Live Link:https://greennest-plant-care-bd.web.app/
