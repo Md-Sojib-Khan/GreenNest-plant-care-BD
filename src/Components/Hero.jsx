@@ -14,11 +14,11 @@ import Navbar from './Navbar';
 
 const Hero = () => {
   return (
-    <div className="relative w-full overflow-hidden">
+    <div className="relative overflow-hidden w-11/12 mx-auto">
       {/* Navbar fixed top */}
-      <div className="absolute md:top-10 md:left-15 w-11/12 z-50">
+      {/* <div className="absolute md:top-10 md:left-15 w-11/12 z-50">
         <Navbar />
-      </div>
+      </div> */}
 
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center z-40 text-white pointer-events-none">
         <h1 className="text-4xl md:text-6xl font-bold drop-shadow-lg mb-4 animate-bounce bg-gradient-to-l from-green-300 to-green-800 bg-clip-text text-transparent">
@@ -41,13 +41,13 @@ const Hero = () => {
       >
         {[hero7, hero5, hero, hero4].map((img, index) => (
           <SwiperSlide key={index}>
-            <div className="relative w-full h-[60vh] md:h-[80vh] lg:h-screen">
+            <div className="relative w-full h-[60vh] md:h-[70vh]">
               <img
                 className="w-full h-full object-cover"
                 src={img}
                 alt={`slide-${index}`}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/70 to-transparent" />
             </div>
           </SwiperSlide>
         ))}

@@ -9,7 +9,7 @@ const Navbar = () => {
     const links = <>
         <li><NavLink to={'/'}>Home</NavLink></li>
         <li><NavLink to={'/plants'}>Plants</NavLink></li>
-        <li><NavLink to={'/profile'}>My Profile</NavLink></li>
+        {/* <li><NavLink to={'/profile'}>My Profile</NavLink></li> */}
     </>
 
     const handleSignOut = () => {
@@ -19,7 +19,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className="navbar bg-transparent">
+        <div className="navbar bg-green-600 sticky top-0 z-50 w-11/12 mx-auto">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -47,6 +47,7 @@ const Navbar = () => {
                             </div>
                             <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm space-y-2">
                                 <li><a className='font-medium'>{user.displayName}</a></li>
+                                <li><NavLink to={'/profile'} className='font-medium'>My Profile</NavLink></li>
                                 <li><button onClick={handleSignOut} className="btn border-0 text-white font-semibold md:px-5 py-2 rounded-full bg-gradient-to-r from-green-400 via-emerald-500 to-green-700 hover:from-emerald-600 hover:to-green-500 shadow-md hover:shadow-lg transition-all duration-300btn border-0 text-white font-semibold px-6 py-2 rounded-full bg-gradient-to-br from-emerald-400 to-green-800 hover:brightness-110 hover:shadow-lg transition-all duration-300">LogOut</button></li>
                             </ul>
                          </div>

@@ -14,7 +14,8 @@ const RootLayout = () => {
         });
     }, []);
     return (
-        <div>
+        <div className='bg-gradient-to-br from-green-50 to-emerald-100'>
+            <Navbar></Navbar>
             <Outlet></Outlet>
             <Footer></Footer>
         </div>

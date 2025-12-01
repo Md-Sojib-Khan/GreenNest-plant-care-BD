@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router";
 import RootLayout from "../Layouts/RootLayout";
 import HomePage from "../Pages/HomePage";
-import MainLayout from "../Layouts/MainLayout";
 import PlantsPage from "../Pages/PlantsPage";
 import PlantDetails from "../Pages/PlantDetails";
 import LoginPage from "../Pages/LoginPage";
@@ -24,7 +23,7 @@ const router = createBrowserRouter([
     },
     {
         path: '/',
-        Component: MainLayout,
+        Component: RootLayout,
         children: [
             {
                 path: '/plants',
@@ -34,9 +33,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/plants/:id',
-                element: <PrivateRoute>
-                    <PlantDetails></PlantDetails>
-                </PrivateRoute>,
+                element: <PlantDetails></PlantDetails>,
                 loader: () => fetch('/plants.json'),
                 hydrateFallbackElement: <p className='min-h-screen flex justify-center items-center'><span className="loading loading-spinner loading-xl"></span></p>
             },

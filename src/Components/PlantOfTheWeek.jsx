@@ -7,7 +7,7 @@ const PlantOfTheWeek = ({ data }) => {
   );
 
   return (
-    <section className="max-w-6xl mx-auto bg-gradient-to-r from-emerald-50 via-green-100 to-emerald-50 rounded-3xl p-6 md:p-10 flex flex-col md:flex-row items-center gap-10 shadow-lg overflow-x-hidden">
+    <section className="w-11/12 mx-auto bg-gradient-to-r from-emerald-50 via-green-100 to-emerald-50 rounded-3xl p-6 md:p-10 flex flex-col md:flex-row items-center gap-10 shadow-lg overflow-x-hidden mb-16">
       <div data-aos="fade-right" className="md:w-1/2">
         <img
           src={bestPlant.image}
