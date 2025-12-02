@@ -10,6 +10,7 @@ import ProfilePage from "../Pages/ProfilePage";
 import BlogLayouts from "../Layouts/BlogLayouts";
 import Blog from "../Pages/Blog";
 import BlogDetails from "../Pages/BlogDetails";
+import AboutUs from "../Pages/AboutUs";
 
 const router = createBrowserRouter([
     {
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
                 element: <PrivateRoute>
                     <ProfilePage></ProfilePage>
                 </PrivateRoute>
+            },
+            {
+                path: '/about-us',
+                Component: AboutUs
             }
         ]
     },
