@@ -6,10 +6,11 @@ const BookConsultation = () => {
         e.preventDefault();
         toast.success('Successfully Booked Consultation')
         e.target.reset()
+        document.getElementById('my_modal_5').close()
     }
     return (
-        <div className="hero bg-gradient-to-br from-green-50 to-emerald-100 py-10">
-            <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl py-5">
+        <div className="hero">
+            <div className="card bg-base-100 w-full max-w-sm shrink-0 py-5">
                 <h1 className="text-2xl md:text-3xl font-bold text-center text-green-600">Book Consultation!</h1>
                 <div className="card-body">
                     <form onSubmit={handleSubmit} className="fieldset">

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Star, Award, Users, BookOpen } from 'lucide-react';
+import BookConsultation from './BookConsultation';
 
 const PlantExperts = () => {
     const experts = [
@@ -38,6 +39,10 @@ const PlantExperts = () => {
         }
     ];
 
+    const handleModalOpen = () => {
+        document.getElementById('my_modal_5').showModal()
+    }
+
     return (
         <div className="bg-gradient-to-br from-green-50 to-emerald-100 py-16 w-11/12 mx-auto">
             <div className="container mx-auto">
@@ -46,21 +51,21 @@ const PlantExperts = () => {
                         Meet Our <span className='text-green-600'>Plant</span> Experts
                     </h2>
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                        Learn from certified botanists and horticulture specialists with years of 
+                        Learn from certified botanists and horticulture specialists with years of
                         experience in plant care and indoor gardening.
                     </p>
                 </div>
 
                 <div data-aos="slide-up" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {experts.map((expert) => (
-                        <div 
+                        <div
                             key={expert.id}
                             className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group hover:transform hover:-translate-y-2"
                         >
 
                             <div className="relative overflow-hidden">
-                                <img 
-                                    src={expert.image} 
+                                <img
+                                    src={expert.image}
                                     alt={expert.name}
                                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                                 />
@@ -110,11 +115,26 @@ const PlantExperts = () => {
                             Need Personalized Plant Advice?
                         </h3>
                         <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-                            Our experts are here to help you choose the perfect plants for your space 
+                            Our experts are here to help you choose the perfect plants for your space
                             and provide ongoing care guidance. Schedule a free consultation today!
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <button className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200">
+                            <div>
+                                {/* Open the modal using document.getElementById('ID').showModal() method */}
+                                {/* <button className="btn" onClick={() => document.getElementById('my_modal_5').showModal()}>open modal</button> */}
+                                <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
+                                    <div className="modal-box">
+                                       <BookConsultation></BookConsultation>
+                                        <div className="modal-action">
+                                            <form method="dialog">
+                                                {/* if there is a button in form, it will close the modal */}
+                                                <button className="btn">Close</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </dialog>
+                            </div>
+                            <button onClick={handleModalOpen} className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200">
                                 Book Consultation
                             </button>
                             <button className="border border-green-500 text-green-500 hover:bg-green-50 font-semibold py-3 px-8 rounded-lg transition-colors duration-200">

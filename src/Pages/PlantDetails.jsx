@@ -47,7 +47,13 @@ const PlantDetails = () => {
                     <p className='border-b border-gray-400'>{plantData.description}</p>
                 </div>
             </div>
-            <BookConsultation></BookConsultation>
+            <div className='my-5 w-11/12 mx-auto md:grid grid-cols-2 gap-5'>
+                <div className='mb-5'>
+                    <h1 className='text-4xl font-bold'>More About {plantData.plantName}</h1>
+                    {plantData.blogData}
+                </div>
+                <BookConsultation></BookConsultation>
+            </div>
         </div>
     );
 };
