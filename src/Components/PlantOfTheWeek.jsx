@@ -1,5 +1,6 @@
 import React from "react";
 import { Star } from "lucide-react";
+import { Link } from "react-router";
 
 const PlantOfTheWeek = ({ data }) => {
   const bestPlant = data.reduce((prev, current) =>
@@ -50,9 +51,9 @@ const PlantOfTheWeek = ({ data }) => {
           </span>
         </div>
 
-        <button className="mt-4 bg-gradient-to-r from-green-400 to-emerald-600 text-white font-medium px-6 py-2.5 rounded-full shadow-md hover:shadow-lg hover:scale-[1.03] transition-all">
+        <Link to={'/plants'} className="mt-4 bg-gradient-to-r from-green-400 to-emerald-600 text-white font-medium px-6 py-2.5 rounded-full shadow-md hover:shadow-lg hover:scale-[1.03] transition-all">
           Learn More
-        </button>
+        </Link>
       </div>
     </section>
   );

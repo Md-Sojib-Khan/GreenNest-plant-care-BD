@@ -36,6 +36,17 @@ const PlantExperts = () => {
             rating: 4.9,
             students: 3200,
             courses: 18
+        },
+        {
+            id: 4,
+            name: " Elite Chain",
+            role: "Botanist",
+            experience: "7+ years",
+            specialty: "Air Purifying Plants & Design",
+            image: "https://www.elitetreecare.com/wp-content/uploads/2022/07/Plant-Doctor-scaled.jpg",
+            rating: 4.7,
+            students: 1200,
+            courses: 10
         }
     ];
 
@@ -56,7 +67,7 @@ const PlantExperts = () => {
                     </p>
                 </div>
 
-                <div data-aos="slide-up" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div data-aos="slide-up" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {experts.map((expert) => (
                         <div
                             key={expert.id}
@@ -99,10 +110,6 @@ const PlantExperts = () => {
                                         <span className="text-sm">{expert.courses} courses</span>
                                     </div>
                                 </div>
-
-                                <button className="w-full mt-4 bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200">
-                                    View Profile
-                                </button>
                             </div>
                         </div>
                     ))}

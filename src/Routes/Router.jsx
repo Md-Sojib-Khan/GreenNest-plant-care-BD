@@ -11,11 +11,13 @@ import BlogLayouts from "../Layouts/BlogLayouts";
 import Blog from "../Pages/Blog";
 import BlogDetails from "../Pages/BlogDetails";
 import AboutUs from "../Pages/AboutUs";
+import ErrorPage from "../Pages/ErrorPage";
 
 const router = createBrowserRouter([
     {
         path: '/',
         Component: RootLayout,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path:'/',
@@ -59,16 +61,19 @@ const router = createBrowserRouter([
         path: '/',
         Component: BlogLayouts,
         loader: () => fetch('/plants.json'),
+        hydrateFallbackElement: <p className='min-h-screen flex justify-center items-center'><span className="loading loading-spinner loading-xl"></span></p> ,
         children: [
             {
                 path: '/blog',
                 Component: Blog,
                 loader: () => fetch('/plants.json'),
+                hydrateFallbackElement: <p className='min-h-screen flex justify-center items-center'><span className="loading loading-spinner loading-xl"></span></p>
             },
             {
                 path:'/blog/:id',
                 Component: BlogDetails,
                 loader: () => fetch('/plants.json'),
+                hydrateFallbackElement: <p className='min-h-screen flex justify-center items-center'><span className="loading loading-spinner loading-xl"></span></p>
             }
         ]
     }

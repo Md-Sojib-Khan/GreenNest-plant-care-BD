@@ -25,7 +25,7 @@ const ProfilePage = () => {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-emerald-100 to-green-200 flex flex-col items-center justify-center p-6">
+        <div className="min-h-screen flex flex-col items-center justify-center p-6">
             <div className="bg-white shadow-lg rounded-2xl p-8 w-full max-w-md text-center">
                 <img
                     src={user?.photoURL || userImg} alt="Profile"
