@@ -14,12 +14,7 @@ import Navbar from './Navbar';
 
 const Hero = () => {
   return (
-    <div className="relative overflow-hidden w-11/12 mx-auto">
-      {/* Navbar fixed top */}
-      {/* <div className="absolute md:top-10 md:left-15 w-11/12 z-50">
-        <Navbar />
-      </div> */}
-
+    <div className="relative overflow-hidden w-11/12 mx-auto md:rounded-4xl">
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center z-40 text-white pointer-events-none">
         <h1 className="text-4xl md:text-6xl font-bold drop-shadow-lg mb-4 animate-bounce bg-gradient-to-l from-green-300 to-green-800 bg-clip-text text-transparent">
           GreenNest – Bring Nature to Your Home

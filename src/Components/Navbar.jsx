@@ -9,7 +9,7 @@ const Navbar = () => {
     const links = <>
         <li><NavLink to={'/'}>Home</NavLink></li>
         <li><NavLink to={'/plants'}>Plants</NavLink></li>
-        {/* <li><NavLink to={'/profile'}>My Profile</NavLink></li> */}
+        <li><NavLink to={'/blog'}>Blog</NavLink></li>
     </>
 
     const handleSignOut = () => {

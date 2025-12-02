@@ -9,7 +9,8 @@
     "careLevel": "Easy",
     "description": "The Snake Plant is one of the most resilient indoor plants, perfect for beginners. It can survive in low light and irregular watering conditions. Known for its upright, sword-like leaves, this plant naturally purifies the air by removing toxins such as formaldehyde and benzene. Ideal for bedrooms, offices, or living rooms, it requires minimal care and adds a touch of elegance to any space.",
     "image": "https://media.istockphoto.com/id/1268045137/photo/potted-snake-plants-inside-a-beautiful-new-flat-or-apartment.jpg?s=612x612&w=0&k=20&c=UX79enZ3Rn2jX5labxi_u2Y0s4X3lfOPfr_UG91yego=",
-    "providerName": "UrbanGreen Studio"
+    "providerName": "UrbanGreen Studio",
+    "blogData": "Sansevieria, commonly known as the snake plant or mother-in-law's tongue, is a genus of flowering plants in the family Asparagaceae. Native to Africa and southern Asia, these evergreen perennials are renowned for their hardiness and air-purifying qualities. Snake plants feature stiff, upright leaves that can grow from 20 cm to 2 meters tall, depending on the species. They are exceptionally drought-tolerant due to their succulent leaves that store water. NASA's Clean Air Study identified snake plants as effective in removing indoor air pollutants like formaldehyde, xylene, and toluene. These plants thrive in indirect light but can tolerate low light conditions, making them ideal for offices and homes with limited natural light."
   },
   {
     "plantId": 2,
@@ -21,7 +22,8 @@
     "careLevel": "Medium",
     "description": "Monstera Deliciosa, also known as the Swiss Cheese Plant, is loved for its large glossy leaves with natural holes. It thrives in bright, indirect light and needs watering once a week. With its bold tropical appearance, this plant instantly transforms any interior into a modern jungle. It also improves indoor air quality, making it both stylish and beneficial for your environment.",
     "image": "https://growurban.uk/cdn/shop/articles/care-guide-monstera-deliciosa-668092_680bbf00-9564-4f0c-b9cb-27ededaf19d2.jpg?v=1748436514&width=2048",
-    "providerName": "UrbanGreen Studio"
+    "providerName": "UrbanGreen Studio",
+    "blogData": "Monstera deliciosa, commonly called Swiss cheese plant or split-leaf philodendron, is a species of flowering plant native to tropical forests of southern Mexico and Central America. This climbing evergreen vine is famous for its large, glossy, heart-shaped leaves that develop characteristic holes and splits as they mature—a phenomenon known as fenestration. In its natural habitat, it can grow up to 20 meters tall with leaves reaching 90 cm in length. The plant produces an edible fruit that tastes like a combination of pineapple and banana, hence the species name 'deliciosa.' Monsteras are popular houseplants worldwide due to their dramatic foliage and relatively easy care requirements. They prefer bright, indirect light and well-draining soil, and should be watered when the top inch of soil feels dry."
   },
   {
     "plantId": 3,
@@ -31,9 +33,10 @@
     "rating": 4.6,
     "availableStock": 20,
     "careLevel": "Easy",
-    "description": "Aloe Vera is a low-maintenance succulent known for its healing gel. It prefers bright light and minimal watering, making it ideal for busy plant owners. The plant’s thick, fleshy leaves store water, helping it survive dry conditions. Beyond its beauty, Aloe Vera helps purify the air and can be used for soothing burns and improving skin health naturally.",
+    "description": "Aloe Vera is a low-maintenance succulent known for its healing gel. It prefers bright light and minimal watering, making it ideal for busy plant owners. The plant's thick, fleshy leaves store water, helping it survive dry conditions. Beyond its beauty, Aloe Vera helps purify the air and can be used for soothing burns and improving skin health naturally.",
     "image": "https://www.almanac.com/sites/default/files/users/Almanac%20Staff/aloe-vera-cgdeaw_ss_full_width.jpg",
-    "providerName": "UrbanGreen Studio"
+    "providerName": "UrbanGreen Studio",
+    "blogData": "Aloe vera is a succulent plant species of the genus Aloe, belonging to the family Asphodelaceae. Native to the Arabian Peninsula but naturalized worldwide, it grows in arid climates and is widely cultivated for agricultural and medicinal uses. The plant has thick, fleshy leaves that store water, allowing it to survive prolonged drought. Each leaf contains a clear gel rich in vitamins, minerals, amino acids, and antioxidants. Historically, aloe vera has been used for medicinal purposes for over 6,000 years, with ancient Egyptian hieroglyphics depicting it as the 'plant of immortality.' Modern research confirms its effectiveness in treating burns, wound healing, and various skin conditions. As a houseplant, it requires minimal watering and prefers bright, indirect sunlight."
   },
   {
     "plantId": 4,
@@ -45,7 +48,8 @@
     "careLevel": "Easy",
     "description": "The Spider Plant is a fast-growing, adaptable indoor favorite. Its arching green and white striped leaves make it visually appealing in hanging pots or tabletop planters. It thrives in moderate light and needs watering once a week. This hardy plant removes carbon monoxide and formaldehyde from the air, making it an excellent choice for improving indoor air quality effortlessly.",
     "image": "https://www.bhg.com/thmb/oDnjlrHprd67aYvinrMfQgVUPtQ=/5332x0/filters:no_upscale():strip_icc()/BHG-spider-plant-c0e0fdd5ec6e4c1588998ce3167f6579.jpg",
-    "providerName": "UrbanGreen Studio"
+    "providerName": "UrbanGreen Studio",
+    "blogData": "Chlorophytum comosum, commonly known as spider plant or airplane plant, is a perennial flowering plant native to tropical and southern Africa. This popular houseplant is characterized by its grass-like leaves that grow in rosettes and arch gracefully, often displaying white or yellow stripes. Spider plants are renowned for their air-purifying capabilities, effectively removing formaldehyde, xylene, and toluene from indoor environments. They produce small white flowers and plantlets (spiderettes) on long stems, which can be easily propagated to create new plants. NASA's Clean Air Study highlighted spider plants as one of the most effective plants for improving indoor air quality. They thrive in bright, indirect light but can tolerate lower light conditions, and prefer evenly moist soil during the growing season."
   },
   {
     "plantId": 5,
@@ -57,19 +61,21 @@
     "careLevel": "Medium",
     "description": "Peace Lily is a graceful indoor plant with lush green leaves and white blooms that add beauty to any space. It thrives in low to medium light and needs weekly watering. Besides its stunning looks, it helps purify indoor air by removing toxins like ammonia and formaldehyde. Perfect for living rooms and offices, it brings peace and freshness to your surroundings.",
     "image": "https://casadeamor.in/cdn/shop/articles/79425404.webp?v=1650096756",
-    "providerName": "UrbanGreen Studio"
+    "providerName": "UrbanGreen Studio",
+    "blogData": "Spathiphyllum, commonly known as peace lily, is a genus of about 47 species of monocotyledonous flowering plants in the family Araceae, native to tropical regions of the Americas and southeastern Asia. These evergreen herbaceous perennials are characterized by their glossy, dark green leaves and distinctive white flowers (spathes) that resemble a white flag of surrender, hence the common name. Peace lilies are not true lilies and are non-toxic to humans but can be toxic to pets if ingested. NASA's Clean Air Study identified peace lilies as effective in removing common household toxins like benzene, formaldehyde, trichloroethylene, and ammonia. They prefer medium to low indirect light and consistently moist soil, and will droop noticeably when they need water, making them easy to care for."
   },
   {
     "plantId": 6,
-    "plantName": "Pothos (Devil’s Ivy)",
+    "plantName": "Pothos (Devil's Ivy)",
     "category": "Vine Plant",
     "price": 14,
     "rating": 4.4,
     "availableStock": 18,
     "careLevel": "Easy",
-    "description": "Pothos, also known as Devil’s Ivy, is a popular trailing plant perfect for shelves and hanging planters. It thrives in low to bright light and grows quickly even with minimal care. Its heart-shaped leaves create a relaxing green vibe. This plant is known for filtering toxins from the air and is one of the easiest plants to propagate for new growth.",
+    "description": "Pothos, also known as Devil's Ivy, is a popular trailing plant perfect for shelves and hanging planters. It thrives in low to bright light and grows quickly even with minimal care. Its heart-shaped leaves create a relaxing green vibe. This plant is known for filtering toxins from the air and is one of the easiest plants to propagate for new growth.",
     "image": "https://www.gardenia.net/wp-content/uploads/2024/02/shutterstock_2245950515.jpg",
-    "providerName": "UrbanGreen Studio"
+    "providerName": "UrbanGreen Studio",
+    "blogData": "Epipremnum aureum, commonly known as pothos, devil's ivy, or golden pothos, is a species of flowering plant in the arum family Araceae, native to Mo'orea in French Polynesia. This trailing vine is one of the most popular houseplants worldwide due to its remarkable adaptability and low maintenance requirements. Pothos features heart-shaped, waxy leaves that can develop yellow, white, or pale green variegation depending on light exposure. In optimal conditions, it can grow over 20 meters long with leaves reaching 45 cm in length. The plant is highly effective at removing indoor pollutants like formaldehyde, benzene, and carbon monoxide. It's also one of the easiest plants to propagate—simply place a cutting in water until roots develop. Pothos can thrive in a wide range of lighting conditions, from low light to bright indirect light."
   },
   {
     "plantId": 7,
@@ -81,7 +87,8 @@
     "careLevel": "Medium",
     "description": "The Rubber Plant is a bold statement plant with glossy, deep-green leaves. It prefers bright, indirect light and moderate watering. Known for its air-purifying qualities, this plant adds a modern touch to any interior. It can grow tall over time, making it perfect for living rooms and corners that need a strong visual focus while keeping the environment fresh and vibrant.",
     "image": "https://nurserylive.com/cdn/shop/products/nurserylive-g-plants-rubber-tree-rubber-plant-ficus-elastica-plant.jpg?v=1680766173",
-    "providerName": "UrbanGreen Studio"
+    "providerName": "UrbanGreen Studio",
+    "blogData": "Ficus elastica, commonly known as the rubber plant or rubber fig, is a species of flowering plant in the mulberry and fig family Moraceae, native to eastern parts of South Asia and Southeast Asia. This evergreen tree can grow up to 30-40 meters tall in its natural habitat, though it remains much smaller as a houseplant. The plant gets its common name from the milky latex it produces, which was once used to make rubber. Its large, glossy, oval-shaped leaves are typically dark green but can also feature variegated patterns in cultivated varieties. Rubber plants are excellent air purifiers, removing formaldehyde from indoor environments. They prefer bright, indirect light and well-draining soil, and should be watered when the top inch of soil feels dry. With proper care, they can become impressive indoor trees that add architectural interest to any space."
   },
   {
     "plantId": 8,
@@ -91,9 +98,10 @@
     "rating": 4.6,
     "availableStock": 13,
     "careLevel": "Easy",
-    "description": "The ZZ Plant is famous for surviving low-light conditions and neglect. Its waxy, dark-green leaves reflect light beautifully and require watering only once every two to three weeks. Perfect for bedrooms or offices, it adds a sophisticated look while improving air quality. It’s an ideal choice for beginners or anyone with a busy schedule who still loves greenery.",
+    "description": "The ZZ Plant is famous for surviving low-light conditions and neglect. Its waxy, dark-green leaves reflect light beautifully and require watering only once every two to three weeks. Perfect for bedrooms or offices, it adds a sophisticated look while improving air quality. It's an ideal choice for beginners or anyone with a busy schedule who still loves greenery.",
     "image": "https://assets.architecturaldigest.in/photos/67c5563e486427e6899bce1e/16:9/w_1616,h_909,c_limit/Untitled%20design%202.jpg",
-    "providerName": "UrbanGreen Studio"
+    "providerName": "UrbanGreen Studio",
+    "blogData": "Zamioculcas is a genus of flowering plants in the family Araceae, containing the single species Zamioculcas zamiifolia. It is a tropical herbaceous perennial plant, and is native to eastern Africa, including Kenya, KwaZulu-Natal, Malawi, Mozambique, Tanzania, and Zimbabwe. Its common names include Zanzibar gem, ZZ plant, Zuzu plant, aroid palm, eternity plant and emerald palm. It is commonly grown as a houseplant, mainly because it has attractive glossy foliage and is easy to care for. Zamioculcas zamiifolia is winter-hardy in USDA Zones 9 and 10. Dutch nurseries began wide-scale commercial propagation of the plant around 1996. It was first described in 1829 by Loddiges, who named it Caladium zamiifolium; Heinrich Wilhelm Schott later reassigned it to the genus Zamioculcas, and Adolf Engler renamed it Zamioculcas zamiifolia. The genus Zamioculcas derives its name from the similarity of its foliage to that of the cycad genus Zamia and its kinship to the Araceae genus Colocasia. It is an herbaceous perennial growing to 45-60 centimetres tall, from a stout, underground, succulent rhizome. It is normally evergreen but becomes deciduous during drought, surviving drought due to the large potato-like rhizome that stores water until rainfall resumes."
   },
   {
     "plantId": 9,
@@ -103,9 +111,10 @@
     "rating": 4.3,
     "availableStock": 11,
     "careLevel": "Medium",
-    "description": "Chinese Evergreen is an elegant plant with colorful, patterned leaves ranging from green to pink and red. It thrives in low to moderate light and tolerates occasional watering mistakes. This plant not only enhances indoor decor but also purifies the air effectively. It’s a great addition to homes or offices seeking vibrant greenery with minimal maintenance needs.",
+    "description": "Chinese Evergreen is an elegant plant with colorful, patterned leaves ranging from green to pink and red. It thrives in low to moderate light and tolerates occasional watering mistakes. This plant not only enhances indoor decor but also purifies the air effectively. It's a great addition to homes or offices seeking vibrant greenery with minimal maintenance needs.",
     "image": "https://images.immediate.co.uk/production/volatile/sites/10/2022/08/2048x1365-Aglaonema-SEO-GettyImages-1308559798-eb73c80.jpg",
-    "providerName": "UrbanGreen Studio"
+    "providerName": "UrbanGreen Studio",
+    "blogData": "Aglaonema, commonly known as Chinese evergreen, is a genus of flowering plants in the arum family Araceae, native to tropical and subtropical regions of Asia and New Guinea. These herbaceous perennials are prized for their striking foliage, which features various patterns of green, silver, white, pink, or red. Chinese evergreens are among the most popular houseplants due to their adaptability to low-light conditions and tolerance of indoor environments. They grow slowly, typically reaching 20-150 cm in height depending on the species. NASA's Clean Air Study identified Chinese evergreens as effective in removing benzene and formaldehyde from indoor air. These plants prefer warm temperatures (20-30°C), moderate humidity, and well-draining soil. They should be watered when the top inch of soil feels dry and benefit from occasional misting to increase humidity."
   },
   {
     "plantId": 10,
@@ -117,7 +126,8 @@
     "careLevel": "Medium",
     "description": "The Areca Palm is a lush, tropical plant that brings a vacation vibe indoors. It grows best in bright, indirect light and requires watering twice a week. Its long, feathery fronds improve humidity and purify the air naturally. This plant is ideal for spacious rooms and offices, adding a refreshing green presence and helping reduce stress levels.",
     "image": "https://nurserylive.com/cdn/shop/files/areca.jpg?v=1751753779",
-    "providerName": "UrbanGreen Studio"
+    "providerName": "UrbanGreen Studio",
+    "blogData": "Dypsis lutescens, commonly known as areca palm, butterfly palm, or golden cane palm, is a species of flowering plant in the family Arecaceae, native to Madagascar and naturalized in many tropical regions worldwide. This clustering palm features multiple cane-like stems and arching, feathery fronds that can grow 2-3 meters long indoors. The plant gets its common name from the yellowish color of its leaf stems. Areca palms are excellent natural humidifiers, releasing moisture into the air through transpiration. NASA's Clean Air Study ranked them among the top air-purifying plants, effective at removing formaldehyde, benzene, and carbon monoxide. They prefer bright, indirect light and consistently moist (but not waterlogged) soil during the growing season. Regular misting helps maintain the humidity they thrive in and prevents spider mite infestations."
   },
   {
     "plantId": 11,
@@ -129,7 +139,8 @@
     "careLevel": "Easy",
     "description": "Jade Plant, also known as the Money Plant, symbolizes good luck and prosperity. It thrives in bright light and needs minimal watering. Its thick, glossy leaves store water, making it a resilient plant for beginners. With proper care, it can live for years and grow into a small tree. Perfect for desks, windowsills, and modern interiors.",
     "image": "https://hips.hearstapps.com/hmg-prod/images/jade-plant-1-645157c445e14.jpg?crop=1.00xw:0.829xh;0,0&resize=1200:*",
-    "providerName": "UrbanGreen Studio"
+    "providerName": "UrbanGreen Studio",
+    "blogData": "Crassula ovata, commonly known as jade plant, lucky plant, money plant, or money tree, is a succulent plant with small pink or white flowers that is native to South Africa and Mozambique. This evergreen perennial features thick, woody stems and fleshy, oval-shaped leaves that store water, allowing it to survive prolonged drought. In its natural habitat, it can grow up to 2 meters tall, though it remains much smaller as a houseplant. Jade plants are associated with good luck and prosperity in many cultures, particularly in Asia where they're often given as housewarming gifts. They are photoperiodic, meaning they require shorter days to trigger flowering. These succulents prefer bright light, well-draining soil, and infrequent watering (allowing the soil to dry completely between waterings). With proper care, jade plants can live for decades and develop a tree-like appearance."
   },
   {
     "plantId": 12,
@@ -139,8 +150,9 @@
     "rating": 4.2,
     "availableStock": 12,
     "careLevel": "Medium",
-    "description": "Boston Fern is a classic indoor plant known for its soft, arching fronds. It thrives in humid environments with indirect light and regular misting. This plant not only adds lush greenery but also helps regulate humidity and clean indoor air. It’s perfect for bathrooms, shaded balconies, or hanging baskets, giving your space a fresh, natural look.",
+    "description": "Boston Fern is a classic indoor plant known for its soft, arching fronds. It thrives in humid environments with indirect light and regular misting. This plant not only adds lush greenery but also helps regulate humidity and clean indoor air. It's perfect for bathrooms, shaded balconies, or hanging baskets, giving your space a fresh, natural look.",
     "image": "https://png.pngtree.com/thumb_back/fh260/background/20250226/pngtree-lush-boston-fern-in-a-hanging-macrame-basket-image_16968187.jpg",
-    "providerName": "UrbanGreen Studio"
+    "providerName": "UrbanGreen Studio",
+    "blogData": "Nephrolepis exaltata, commonly known as Boston fern or sword fern, is a species of fern in the family Lomariopsidaceae, native to tropical regions throughout the world. This popular houseplant features long, arching fronds composed of small, bright green leaflets (pinnae) that can grow 50-250 cm long and 6-15 cm broad. Boston ferns are particularly effective at removing indoor air pollutants, especially formaldehyde, and act as natural humidifiers. They were one of the first plants to be grown commercially for indoor use in the late 19th century and remain popular today. These ferns prefer bright, indirect light, consistently moist soil, and high humidity (above 80% is ideal). Regular misting or placing them on a pebble tray with water helps maintain the humidity they need. They're excellent for hanging baskets where their graceful fronds can cascade freely."
   }
 ]
